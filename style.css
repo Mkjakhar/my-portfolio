@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none !important;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+
+body,
+html {
+    height: 100%;
+}
+
+section {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100%;
+}
+
+div a {
+    background-color: rgba(0, 128, 0, 0.199);
+}
+
+div a:hover {
+    background-color: green;
+}
