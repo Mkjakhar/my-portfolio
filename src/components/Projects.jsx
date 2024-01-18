@@ -61,7 +61,8 @@ const Projects = () => {
               <h2 className="text-white font-medium ff_fira text-[22px] sm:text-3xl md:text-[32px] sm:text-[32px] relative projects_line">
                 <span className="text-[#C778DD]">#</span>projects
               </h2>
-              <Link to="/project"
+              <Link
+                to="/project"
                 className="text-white font-medium ff_fira text-[16px] flex items-center"
               >
                 View all
@@ -73,9 +74,16 @@ const Projects = () => {
 
             <div className="flex flex-wrap justify-center md:justify-start project_cards">
               {projects.slice(0, 3).map((index) => (
-                <div className=" w-full max-w-[375px] md:w-6/12 lg:w-4/12 sm:px-3 mt-6">
-                  <div className=" border border-[#ABB2BF]">
-                    <img src={index.img} alt="map-img" className="w-full" />
+                <div className=" w-full group max-w-[375px] md:w-6/12 lg:w-4/12 sm:px-3 mt-6">
+                  <div className=" border h-full flex flex-col justify-between border-[#ABB2BF]">
+                   <div>
+                   <div className="overflow-hidden">
+                      <img
+                        src={index.img}
+                        alt="map-img"
+                        className="w-full group-hover:scale-110 duration-300 h-[200px] object-cover"
+                      />
+                    </div>
                     <p className=" ff_fira text-[#ABB2BF] py-2 px-2 border-b border-b-[#ABB2BF]">
                       {index.skill}
                     </p>
@@ -85,13 +93,18 @@ const Projects = () => {
                     <p className=" ff_fira text-[16px] px-4 pb-3 sm:pb-4 text-[#ABB2BF]">
                       {index.servers}
                     </p>
+                   </div>
                     <div>
-                      <button className=" flex items-center mx-4 mb-4 ff_fira font-medium text-white text-[16px] border border-[#ABB2BF] py-2 px-4">
+                      <a
+                        href={index.link}
+                        target="blank"
+                        className="inline-flex items-center mx-4 mb-4 ff_fira font-medium text-white text-[16px] border border-[#ABB2BF] py-2 px-4"
+                      >
                         Live
                         <span className=" ms-2">
                           <img src={arrowP} alt="arrowP" />
                         </span>
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import hero_img from "../assets/images/png/hero_img.png";
-import resume from "../assets/Resume.pdf";
+import resume from "../assets/Mohit-Resume.pdf";
 import Nav from "./common/Nav";
 import { HeroImgIcon } from "./common/Icon";
 import dots from "../assets/images/png/hero-img-dots.png";
@@ -27,7 +27,7 @@ const Header = () => {
             alt="discord"
           />
         </a>
-        <a className=" group" target="blank" href="#">
+        <a className="group" target="blank" href="https://discord.com/users/993772028458967070">
           <img
             className="group-hover:scale-125 transition-all duration-200"
             src={discord}
