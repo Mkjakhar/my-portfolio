@@ -8,8 +8,8 @@ export const LogoIcon = () => {
       fill="none"
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M12 0.5H8V4.5H4H0V8.5V12.5V16.5H4H8V12.5H12H16V8.5V4.5V0.5H12ZM4 12.5H8V8.5H12V4.5H8V8.5H4V12.5Z"
         fill="white"
       />
@@ -27,8 +27,8 @@ export const HeroImgIcon = () => {
     >
       <mask id="path-1-inside-1_64_1298" fill="white">
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M0 39.75H38.75H77.5V78.5H38.75V117.25H77.5V156H38.75H0V117.25V78.5V39.75Z"
         />
       </mask>
@@ -48,8 +48,8 @@ export const HeroImgIcon = () => {
       >
         <rect fill="white" x="76.5" width="80" height="119" />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M77.5 1H116.25H155V39.75V78.5V117.25H116.25H77.5V78.5H116.25V39.75H77.5V1Z"
         />
       </mask>

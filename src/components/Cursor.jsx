@@ -30,8 +30,8 @@ const Cursor = () => {
       style={{
         left: `${position.x}px`,
         top: `${position.y}px`,
-        width: isOverLink || isOverButton ? '40px' : '25px',
-        height: isOverLink || isOverButton ? '40px' : '25px',
+        width: isOverLink || isOverButton ? '40px' : '0',
+        height: isOverLink || isOverButton ? '40px' : '0',
       }}
     />
   );

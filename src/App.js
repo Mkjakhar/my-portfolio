@@ -8,7 +8,7 @@ import Cursor from "./components/Cursor";
 import ProgressBar from "./components/ProgressBar";
 import Footer from "./components/Footer";
 function App() {
-  return (
+   return (
     <>
       <BrowserRouter>
         <Cursor />

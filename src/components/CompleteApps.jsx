@@ -29,26 +29,41 @@ const CompleteApps = () => {
         </h2>
 
         <div className="flex flex-wrap justify-center md:justify-start md:mt-6">
-          {projects.map((index) => (
-            <div className=" w-full max-w-[400px] sm:w-6/12 lg:w-4/12 sm:px-3 mt-6">
-              <div className=" border border-[#ABB2BF] sm:min-h-[448px] flex flex-col justify-between">
-                <img src={index.img} alt="map-img" className="w-full" />
-                <p className=" ff_fira text-[#ABB2BF] py-2 px-2 border-b border-b-[#ABB2BF]">
-                  {index.skill}
-                </p>
-                <h2 className=" py-3 sm:py-4 px-4 ff_fira font-medium text-white  max-w-[329px] text-lg sm:text-xl md:text-2xl">
-                  {index.projectsName}
-                </h2>
-                <p className=" ff_fira text-[16px] px-4 pb-3 sm:pb-4 text-[#ABB2BF]">
-                  {index.servers}
-                </p>
+          {projects.map((val, i) => (
+            <div
+              key={i}
+              className=" w-full group max-w-[375px] md:w-6/12 lg:w-4/12 sm:px-3 mt-6"
+            >
+              <div className=" border h-full flex flex-col justify-between border-[#ABB2BF]">
                 <div>
-                  <button className=" flex items-center mx-4 mb-4 ff_fira font-medium text-white text-[16px] border border-[#ABB2BF] py-2 px-4 ">
+                  <div className="overflow-hidden">
+                    <img
+                      src={val.img}
+                      alt="map-img"
+                      className="w-full group-hover:scale-110 duration-300 h-[200px] object-contain"
+                    />
+                  </div>
+                  <p className=" ff_fira text-[#ABB2BF] py-2 px-2 border-b border-b-[#ABB2BF]">
+                    {val.skill}
+                  </p>
+                  <h2 className=" py-3 sm:py-4 px-4 ff_fira font-medium text-white  max-w-[329px] text-lg sm:text-xl md:text-2xl">
+                    {val.projectsName}
+                  </h2>
+                  <p className=" ff_fira text-[16px] px-4 pb-3 sm:pb-4 text-[#ABB2BF]">
+                    {val.servers}
+                  </p>
+                </div>
+                <div>
+                  <a
+                    href={val.link}
+                    target="blank"
+                    className="inline-flex items-center mx-4 mb-4 ff_fira font-medium text-white text-[16px] border border-[#ABB2BF] py-2 px-4"
+                  >
                     Live
                     <span className=" ms-2">
                       <img src={arrowP} alt="arrowP" />
                     </span>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>

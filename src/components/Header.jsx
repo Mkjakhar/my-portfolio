@@ -1,6 +1,6 @@
 import React from "react";
 import hero_img from "../assets/images/png/hero_img.png";
-import resume from "../assets/Mohit-Resume.pdf";
+import resume from "../assets/Mohit-Front-end-developer.pdf";
 import Nav from "./common/Nav";
 import { HeroImgIcon } from "./common/Icon";
 import dots from "../assets/images/png/hero-img-dots.png";
@@ -52,19 +52,19 @@ const Header = () => {
             <div className="flex gap-5">
               <a
                 href="mailto:mkjakhar909@gmail.com"
-                class="group inline-block ff_fira  font-medium relative min-h-[40px] sm:min-h-[50px] w-36 sm:w-40  overflow-hidden border border-[#C778DD] bg-transparent text-white shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#C778DD] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#C778DD] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
+                className="group inline-block ff_fira  font-medium relative min-h-[40px] sm:min-h-[50px] w-36 sm:w-40  overflow-hidden border border-[#C778DD] bg-transparent text-white shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#C778DD] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#C778DD] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full"
               >
-                <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#C778DD] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#C778DD] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
-                <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                <span className="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-[#C778DD] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-[#C778DD] after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                <span className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
                   Contact me!!
                 </span>
               </a>
               <a
                 href={resume} target="blank"
-                class="group inline-block ff_fira  font-medium relative min-h-[40px] sm:min-h-[50px] w-36 sm:w-40  overflow-hidden border border-[#C778DD] bg-transparent text-white shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-full before:w-1/4 before:bg-[#C778DD] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-full after:w-1/4 after:bg-[#C778DD] after:duration-500 hover:text-white hover:before:h-1/4 hover:after:h-1/4 group-hover:after:w-1/2 group-hover:before:w-1/2"
+                className="group inline-block ff_fira  font-medium relative min-h-[40px] sm:min-h-[50px] w-36 sm:w-40  overflow-hidden border border-[#C778DD] bg-transparent text-white shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-full before:w-1/4 before:bg-[#C778DD] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-full after:w-1/4 after:bg-[#C778DD] after:duration-500 hover:text-white hover:before:h-1/4 hover:after:h-1/4 group-hover:after:w-1/2 group-hover:before:w-1/2"
               >
-                <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-full before:w-1/4 before:bg-[#C778DD] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-full after:w-1/4 after:bg-[#C778DD] after:duration-500 hover:text-white group-hover:before:h-1/4 group-hover:after:h-1/4 group-hover:after:w-1/2 group-hover:before:w-1/2"></span>
-                <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
+                <span className="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-full before:w-1/4 before:bg-[#C778DD] before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-full after:w-1/4 after:bg-[#C778DD] after:duration-500 hover:text-white group-hover:before:h-1/4 group-hover:after:h-1/4 group-hover:after:w-1/2 group-hover:before:w-1/2"></span>
+                <span className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">
                   Download CV
                 </span>
               </a>
